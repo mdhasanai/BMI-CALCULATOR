@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="366.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mdhasan.bmicalculator.FXMLController">
+   <children>
+      <Label fx:id="label" alignment="CENTER" layoutX="-3.0" prefHeight="69.0" prefWidth="366.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="125.0" layoutY="324.0" onAction="#calculate" prefHeight="37.0" prefWidth="91.0" ripplerFill="#2fcc9aa9" style="-fx-background-color: #2fcd9d;" text="Calulate" textFill="#f8f8f8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="age" layoutX="111.0" layoutY="128.0" prefHeight="43.0" prefWidth="179.0" promptText="Age" unFocusColor="#33f2a9" />
+      <JFXTextField fx:id="foot" layoutX="111.0" layoutY="188.0" prefHeight="43.0" prefWidth="65.0" promptText="Foot" unFocusColor="#33f2a9" />
+      <JFXTextField fx:id="kg" layoutX="111.0" layoutY="245.0" prefHeight="43.0" prefWidth="189.0" promptText="Kg" unFocusColor="#33f2a9" />
+      <Label layoutX="23.0" layoutY="140.0" prefHeight="31.0" prefWidth="45.0" text="Age: ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="79.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="male" layoutX="104.0" layoutY="79.0" mnemonicParsing="false" onAction="#calculate" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="G" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="216.0" layoutY="79.0" mnemonicParsing="false" onAction="#calculate" text="Female" toggleGroup="$G" />
+      <Label layoutX="23.0" layoutY="200.0" prefHeight="31.0" prefWidth="60.0" text="Height:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="251.0" prefHeight="31.0" prefWidth="65.0" text="Weight: ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="inch" layoutX="201.0" layoutY="188.0" prefHeight="43.0" prefWidth="65.0" promptText="Inch" unFocusColor="#33f2a9" />
+      <JFXButton buttonType="RAISED" layoutX="234.0" layoutY="324.0" onAction="#reset" prefHeight="37.0" prefWidth="91.0" ripplerFill="#2fcc9aa9" style="-fx-background-color: #2fcd9d;" text="Reset" textFill="#f8f8f8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
